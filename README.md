@@ -1,6 +1,4 @@
-++++++++++++++++++++++++++++++++++++++++
 WEST TENNESSEE FIL-AM ASSOCIATION README
-++++++++++++++++++++++++++++++++++++++++
 
 We, Bethany Datuin and Ellison Masangcay, first started our "design journey" by taking inspiration from the website we learned to code from the course titled "CSS Basics."
 The website we were creating for this competition was for the West Tennessee Fil-Am Association.
