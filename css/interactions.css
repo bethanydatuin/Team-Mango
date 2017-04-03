@@ -1,0 +1,37 @@
+/*******************************************
+                HEADER IMAGE
+********************************************/
+
+.philippines img {
+  position: relative;
+  width: 225px;
+  height: auto;
+  transition: transform .5s;
+}
+
+.philippines:hover img {
+  transform: scale(1.1);
+}
+
+/*******************************************
+     DOWNLOAD BUTTON ON MEMBERSHIP PAGE
+********************************************/
+
+.button:hover {
+  background: rgba(128, 0, 12, 1);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .7);
+}
+
+.photo-overlay:hover .button {
+  opacity: 1;
+}
+
+.btn-icon {
+  transition-property: opacity .5s .3s, left .5s .3s;
+  transition-timing-function: ease-in-out;
+}
+
+.button:hover .btn-icon {
+  opacity: 1;
+  left: 80%;
+}

@@ -1,0 +1,582 @@
+/*******************************************
+                BASE STYLES
+********************************************/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: justify;
+  color: #000;
+  margin: 0;
+  font: 1em/1.5 'Raleway', sans-serif;
+}
+
+h1,
+h3 {
+  color: #0839ad;
+}
+
+h1 {  
+  font-size: 2.5rem; 
+  font-weight: 100;
+  color: #fff;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 700;
+  padding-bottom: .5em;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}
+
+h2,
+h3 {
+  font-family: 'Raleway', sans-serif;
+  color: #ce1021;
+}
+
+/* Red Divider Beneath H2 */
+.divider {
+  width: 50px;
+  border-bottom: 2px solid;
+}
+
+/* Column */
+.column {
+  margin: 0 auto;
+  padding-top: 2.5em;
+  text-align: justify;
+}
+
+/* Primary, Secondary, and Tertiary Columns */
+.primary,
+.secondary {
+  width: 50%;
+}
+
+.tertiary {
+  width: 95%;
+}
+
+/* Photos in Second Column */
+.photo {
+  border: 5px solid #80000c;
+}
+
+
+
+/*******************************************
+                LINK STYLES
+********************************************/
+
+/* Link */
+a:link {
+  color: #0839ad;
+  text-decoration: none;
+  transition-duration: .5s;
+}
+
+/* Visited Link */
+a:visited {
+  color: #0839ad;
+}
+
+/* Hover Link */
+a:hover {
+  color: #04236a;
+}
+
+/* Selected Link */
+a:selected {
+  color: #04236a;
+}
+
+
+
+
+/*******************************************
+                  HEADER
+********************************************/
+
+.header {
+  position: fixed;
+  background-color: white;
+  box-shadow: 0 1px 4px rgba(0,0,0,.4);
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Dark Blue Header */
+.banner {
+  text-align: center;
+  padding-top: 75px;
+  height: 550px;
+}
+
+/* Shadow Behind Text in Header */
+.shadow {
+  color: #000;
+  background-color: #0839ad;
+  letter-spacing: .05em;
+  text-shadow: 
+    4px 4px 0px #0839ad, 
+    7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/*******************************************
+                 NAVIGATION
+********************************************/
+
+.nav li {
+  display: inline-block;
+}
+
+.nav a {
+  font-size: .95em;
+  color: #ce1021;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  padding: 10px 15px;
+}
+
+.nav a.selected, .nav a:hover {
+  color: #80000c;
+}
+
+.nav a.selected {
+  border-bottom: 1px solid #80000c;
+}
+
+
+
+/*******************************************
+                HISTORY PAGE
+********************************************/
+
+/* Captions under Pictures */
+.caption {
+  text-align: center;
+  font-size: .80em;
+}
+
+
+
+/*******************************************
+              ACTIVITIES PAGE
+********************************************/
+
+/* Event and Location Headers */
+.event,
+.location {
+  margin: 0 auto;
+}
+
+/* Location Styling */
+.location {
+  font-size: .80em;
+  font-style: italic;
+}
+
+
+
+/*******************************************
+             PHOTO GALLERY PAGE
+********************************************/
+
+.photo-gallery {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.gallery {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 4.5em;
+}
+
+.photo-caption {
+  text-align: left;
+  font-size: 0.95em;
+}
+
+.box li,
+.box2 li,
+.box3 li,
+.box4 li {
+  background-color: #fff;
+  padding: 10px;
+}
+
+.box,
+.box2,
+.box3,
+.box4 {
+  z-index: 1; /* prevent shadows falling behind containers with backgrounds */
+  list-style: none;
+}
+
+ul.box li,
+ul.box2 li,
+ul.box3 li,
+ul.box4 li {
+  position: relative;
+  float: left;
+  margin: 0 30px 30px 0;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+}
+
+
+.box ul li:before,
+.box ul li:after,
+.box2 ul li:after,
+.box3 ul li:before,
+.box4 ul li:after {
+  position: absolute;
+  max-width: auto;
+  max-height: 100px;
+  height: 55%;
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -webkit-transform: skew(-15deg) rotate(-6deg);
+  -moz-transform: skew(-15deg) rotate(-6deg);
+  -ms-transform: skew(-15deg) rotate(-6deg);
+  -o-transform: skew(-15deg) rotate(-6deg);
+  transform: skew(-15deg) rotate(-6deg);
+}
+
+ul.box li:after,
+ul.box4 li:after {
+  left: auto;
+  right: 10px;
+  -webkit-transform: skew(15deg) rotate(6deg);
+  -moz-transform: skew(15deg) rotate(6deg);
+  -ms-transform: skew(15deg) rotate(6deg);
+  -o-transform: skew(15deg) rotate(6deg);
+  transform: skew(15deg) rotate(6deg);
+}
+
+
+
+/*******************************************
+              MEMBERSHIP PAGE
+********************************************/
+
+/* Picture of Form */
+.form {
+  width: 100%;
+}
+
+/* Download Button Beneath Picture of Form */
+.button {
+	width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+	display: block;
+	text-decoration: none;
+	background: rgb(206, 16, 33);
+	padding: 23px 0;
+	border-radius: .5em;
+	margin: 0;
+	position: relative;
+}
+
+a.button {
+	color: #fff;
+}
+
+/* Download Icon */
+.btn-icon {
+	opacity: 0;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: url('../img/download.svg');
+	position: absolute;
+	top: 33%;
+}
+
+
+
+/*******************************************
+               CONTACT PAGE
+********************************************/
+
+.contact-footer {
+  color: #0839ad;
+  list-style-type: none;
+  font-size: 0.9em;
+}
+
+/* Form */
+
+.form-header {
+  color: #000;
+  text-align: center;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #000;
+}
+
+form {
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+}
+
+input[type="text"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #fff;
+  background-color: #ce1022;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #80000c;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+
+
+/*******************************************
+               FOOTER STYLES
+********************************************/
+
+.footer {
+  text-align: center;
+  color: #fff;
+	background: #0839ad;
+	padding: 1em 0;
+	margin-top: 30px;
+}
+
+/* Credit Section */
+.footer-text {
+  font-size: .80em;
+  padding-top: 1em;
+  padding-left: 30px;
+}
+
+/* Footer Navigation */
+.footer-li li {
+  list-style-type: none;
+  display: inline-block;
+  padding-right: 1em;
+  padding-bottom: 1em;
+}
+
+/* Footer Navigation Links */
+.footer-li li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Contact Links in Footer */
+.contact-footer a {
+  display: inline-block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+
+/* Icons Next to Links in Footer */
+.contact-footer li.mail a {
+  background-image: url('../img/mail-footer.png');
+}
+
+.contact-footer li.facebook a {
+  background-image: url('../img/facebook-footer.png');
+}
+
+.contact-footer li.mail a:hover {
+  background-image: url('../img/mail-footer-hover.png');
+}
+
+.contact-footer li.facebook a:hover {
+  background-image: url('../img/facebook-footer-hover.png');
+}
+
+/* Footer Links */
+.footer a {
+  color: #fff;
+  font-weight: 700;
+}
+
+.footer a.selected, .footer a:hover {
+  color: #ce1021;
+}
+
+
+
+/*******************************************
+                   FLOATS
+********************************************/
+
+/* Primary Column */
+.primary {
+  width: 50%;
+  float: left;
+}
+
+/* Secondary Column */
+.secondary {
+  width: 40%;
+  float: right;
+}
+
+
+
+/*******************************************
+                  CLEARFIX
+********************************************/
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+
+
+/*******************************************
+               MEDIA QUERIES
+********************************************/
+
+@media screen and (min-width: 480px) {
+
+  form {
+    max-width: 480px;
+  }
+
+}
+
+@media only screen and (max-width : 769px) {
+
+  .nav li {
+    display: block;
+    width: 90%;
+  }
+  
+  .banner {
+    padding-top: 275px;
+    height: 800px;
+  }
+  
+  h1 {  
+    font-size: 2.625rem;
+  }
+  
+  .photo {
+    display: block;
+    margin: auto;
+  }
+  
+  .primary,
+  .secondary,
+  .tertiary {
+    width: 90%;
+    float: none;
+  }
+  
+  .gallery {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 1.5em;
+  }
+
+}
+    
+@media only screen and (min-width : 769px) {
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .column {
+    float: left;
+    padding-left: 7em;
+  }
+
+  .primary,
+  .secondary {
+    width: 50%;
+  }
+
+}
